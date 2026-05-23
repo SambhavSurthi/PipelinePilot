@@ -65,7 +65,7 @@ def _step_message(event: dict) -> str | None:
     if step == "patch_ready":
         return "📝 Fix generated. Please review below."
     if step == "awaiting_approval":
-        return "⏸️ Waiting for your approval…"
+        return "⏸️ Waiting for your approval…..."
     if step == "fix_applied":
         pr = event.get("pr_url") or "(no PR URL)"
         return f"✅ Fix pushed! PR created: {pr}"
